@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.appsys.dao.backenduser.BackendUserMapper">
+	
+	<resultMap type="BackendUser" id="loginList">
+		<result property="id" column="id"/>
+		<result property="userCode" column="userCode"/>
+		<result property="userName" column="userName"/>
+		<result property="userType" column="userType"/>
+		<result property="createdBy" column="createdBy"/>
+		<result property="creationDate" column="creationDate"/>
+		<result property="modifyBy" column="modifyBy"/>
+		<result property="modifyDate" column="modifyDate"/>
+		<result property="userPassword" column="userPassword"/>
+		<result property="userTypeName" column="valueName"/>
+	</resultMap>
+	<select id="loginByCode" resultMap="loginList">
+		SELECT bu.*,dd.valueName FROM backend_user bu,data_dictionary dd
+	WHERE bu.userType=dd.`valueId` AND bu.`userCode`=#{userCode} AND dd.`typeCode` = 'USER_TYPE'
+	</select>
+</mapper>
