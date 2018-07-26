@@ -7,13 +7,13 @@
 		<div class="x_panel">
 			<div class="x_title">
 				<h2>
-					APP 信息管理维护 <i class="fa fa-user"></i><small>${devUserSession.devName}
+					APP 信息管理维护 <i class="fa fa-user"></i><small>${devuserSession.devName}
 						- 您可以通过搜索或者其他的筛选项对APP的信息进行修改、删除等管理操作。^_^</small>
 				</h2>
 				<div class="clearfix"></div>
 			</div>
 			<div class="x_content">
-				<form method="post" action="list">
+				<form method="post" action="${pageContext.request.contextPath }/dev/flatform/appList">
 					<input type="hidden" name="pageIndex" value="1" />
 			    <ul>
 					<li>
@@ -62,9 +62,9 @@
 							<label class="control-label col-md-3 col-sm-3 col-xs-12">一级分类</label>
 							<div class="col-md-6 col-sm-6 col-xs-12">
 								<select id="queryCategoryLevel1" name="queryCategoryLevel1" class="form-control">
-									<c:if test="${categoryLevel1List != null }">
+									<c:if test="${categorieLevel1List != null }">
 									   <option value="">--请选择--</option>
-									   <c:forEach var="appCategory" items="${categoryLevel1List}">
+									   <c:forEach var="appCategory" items="${categorieLevel1List}">
 									   		<option <c:if test="${appCategory.id == queryCategoryLevel1 }">selected="selected"</c:if>
 									   		value="${appCategory.id}">${appCategory.categoryName}</option>
 									   </c:forEach>
