@@ -1,4 +1,4 @@
-package cn.appsys.dao.datadictionary;
+ï»¿package cn.appsys.dao.datadictionary;
 
 import java.util.List;
 
@@ -7,13 +7,13 @@ import org.apache.ibatis.annotations.Param;
 import cn.appsys.pojo.DataDictionary;
 
 /**
- * Êı¾İ×Öµä½Ó¿Ú
+ * æ•°æ®å­—å…¸æ¥å£
  * @author Administrator
  *
  */
 public interface datadictionaryMapper {
 	/**
-	 * ¸ù¾İÀàĞÍ±àºÅ²éÑ¯Êı¾İ×Öµä±í
+	 * æ ¹æ®ç±»å‹ç¼–å·æŸ¥è¯¢æ•°æ®å­—å…¸è¡¨
 	 * @param typeCode
 	 * @return
 	 */

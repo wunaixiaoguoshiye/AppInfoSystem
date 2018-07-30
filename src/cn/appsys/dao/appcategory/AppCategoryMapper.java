@@ -1,4 +1,4 @@
-package cn.appsys.dao.appcategory;
+锘縫ackage cn.appsys.dao.appcategory;
 
 import java.util.List;
 
@@ -7,13 +7,13 @@ import org.apache.ibatis.annotations.Param;
 import cn.appsys.pojo.AppCategory;
 
 /**
- * 分类级别接口
+ * 鍒嗙被绾у埆鎺ュ彛
  * @author Administrator
  *
  */
 public interface AppCategoryMapper {
 	/**
-	 * 根据上一级的级别分类，查询下一级的级别分类
+	 * 鏍规嵁涓婁竴绾х殑绾у埆鍒嗙被锛屾煡璇笅涓�绾х殑绾у埆鍒嗙被
 	 * @param parentId
 	 * @return
 	 * @throws Exception

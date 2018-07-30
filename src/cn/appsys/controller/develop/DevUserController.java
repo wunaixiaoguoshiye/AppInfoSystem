@@ -1,4 +1,4 @@
-package cn.appsys.controller.develop;
+ï»¿package cn.appsys.controller.develop;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
@@ -16,7 +16,7 @@ import cn.appsys.tools.Constants;
 
 
 /**
- * app¿ª·¢ÕßÓÃ»§Controller
+ * appå¼€å‘è€…ç”¨æˆ·Controller
  * @author Administrator
  *
  */
@@ -27,35 +27,35 @@ public class DevUserController {
 	private DevUserService devUserService;
 	private Logger logger=Logger.getLogger(DevUserController.class);
 	
-	//½øÈëµÇÂ½Ò³Ãæ
+	//è¿›å…¥ç™»é™†é¡µé¢
 	@RequestMapping(value="/login")
 	public String login(){
-		logger.debug("==============>½øÈëµÇÂ½Ò³Ãæ");
+		logger.debug("==============>è¿›å…¥ç™»é™†é¡µé¢");
 		return "devlogin";
 	}
 	
-	//app¿ª·¢ÕßÓÃ»§µÇÂ½ÑéÖ¤
+	//appå¼€å‘è€…ç”¨æˆ·ç™»é™†éªŒè¯
 	@RequestMapping(value="/dologin")
 	public String doLogin(@RequestParam String devCode,
 							@RequestParam String devPassword,
 							HttpSession session,
 							HttpServletRequest request){
-		logger.debug("===================>app¿ª·¢ÕßµÇÂ½ÑéÖ¤ÖĞ");
-		//Æ¥ÅäÓÃ»§
+		logger.debug("===================>appå¼€å‘è€…ç™»é™†éªŒè¯ä¸­");
+		//åŒ¹é…ç”¨æˆ·
 		DevUser user=null;
 		user=devUserService.login(devCode, devPassword);
-		if (user!=null) {//µÇÂ½³É¹¦
-			session.setAttribute(Constants.DEVUSER_SESSION, user);//±£´æÓÃ»§ĞÅÏ¢
-			//Ò³ÃæÌø×ª
+		if (user!=null) {//ç™»é™†æˆåŠŸ
+			session.setAttribute(Constants.DEVUSER_SESSION, user);//ä¿å­˜ç”¨æˆ·ä¿¡æ¯
+			//é¡µé¢è·³è½¬
 			return "redirect:/dev/flatform/main";
 		}else {
-			//±£ÁôÔÚµÇÂ½Ò³Ãæ£¬ÌáÊ¾´íÎóÏÂĞÅÏ¢
-			request.setAttribute("error", "ÓÃ»§Ãû»ñÃÜÂë²»ÕıÈ·");
+			//ä¿ç•™åœ¨ç™»é™†é¡µé¢ï¼Œæç¤ºé”™è¯¯ä¸‹ä¿¡æ¯
+			request.setAttribute("error", "ç”¨æˆ·åè·å¯†ç ä¸æ­£ç¡®");
 			return "devlogin";
 		}
 	}
 	
-	//µÇÂ½³É¹¦ºó
+	//ç™»é™†æˆåŠŸå
 	@RequestMapping(value="/flatform/main")
 	public String main(HttpSession session){
 		if (session.getAttribute(Constants.DEVUSER_SESSION)==null) {
@@ -65,7 +65,7 @@ public class DevUserController {
 		}
 	}
 	
-	//ÓÃ»§×¢Ïú·½·¨
+	//ç”¨æˆ·æ³¨é”€æ–¹æ³•
 	@RequestMapping(value="/logout")
 	public String logout(HttpSession session){
 		session.removeAttribute(Constants.DEVUSER_SESSION);

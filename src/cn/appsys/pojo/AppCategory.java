@@ -1,21 +1,21 @@
-package cn.appsys.pojo;
+ï»¿package cn.appsys.pojo;
 
 import java.util.Date;
 
 /**
- * APPËùÊô·ÖÀàÊµÌåÀà
+ * APPæ‰€å±åˆ†ç±»å®ä½“ç±»
  * @author Administrator
  *
  */
 public class AppCategory {
-	private int id;					//Ö÷¼üID
-	private String categoryCode;	//·ÖÀà±àÂë
-	private String categoryName;	//·ÖÀàÃû³Æ
-	private int parentId;			//¸¸¼¶½Úµãid
-	private int createdBy;			//´´½¨Õß£¨À´Ô´ÓÚbackend_userÓÃ»§±íµÄÓÃ»§id£©
-	private Date creationTime;		//´´½¨Ê±¼ä
-	private int modifyBy;			//¸üĞÂÕß£¨À´Ô´ÓÚbackend_userÓÃ»§±íµÄÓÃ»§id£©
-	private Date modifyDate;		//×îĞÂ¸üĞÂÊ±¼ä
+	private int id;					//ä¸»é”®ID
+	private String categoryCode;	//åˆ†ç±»ç¼–ç 
+	private String categoryName;	//åˆ†ç±»åç§°
+	private int parentId;			//çˆ¶çº§èŠ‚ç‚¹id
+	private int createdBy;			//åˆ›å»ºè€…ï¼ˆæ¥æºäºbackend_userç”¨æˆ·è¡¨çš„ç”¨æˆ·idï¼‰
+	private Date creationTime;		//åˆ›å»ºæ—¶é—´
+	private int modifyBy;			//æ›´æ–°è€…ï¼ˆæ¥æºäºbackend_userç”¨æˆ·è¡¨çš„ç”¨æˆ·idï¼‰
+	private Date modifyDate;		//æœ€æ–°æ›´æ–°æ—¶é—´
 	public int getId() {
 		return id;
 	}

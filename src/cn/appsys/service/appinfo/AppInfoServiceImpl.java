@@ -35,4 +35,16 @@ public class AppInfoServiceImpl implements AppinfoService{
 		return num;
 	}
 
+	@Override
+	public AppInfo getAppInfoByApkName(Integer id, String APKName) {
+		// TODO Auto-generated method stub
+		return appInfoMapper.getAppInfoByApkName(id, APKName);
+	}
+
+	@Override
+	public int add(AppInfo appInfo) {
+		// TODO Auto-generated method stub
+		return appInfoMapper.add(appInfo);
+	}
+
 }

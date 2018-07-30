@@ -1,4 +1,4 @@
-package cn.appsys.controller.backend;
+ï»¿package cn.appsys.controller.backend;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
@@ -15,7 +15,7 @@ import cn.appsys.service.backenduser.BackendUserService;
 import cn.appsys.tools.Constants;
 
 /**
- * ³¬¼¶¹ÜÀíÔ±¿ØÖÆÆ÷
+ * è¶…çº§ç®¡ç†å‘˜æ§åˆ¶å™¨
  * @author Administrator
  *
  */
@@ -26,34 +26,34 @@ public class BackendUserController {
 	private BackendUserService backendUserService;
 	private Logger logger=Logger.getLogger(BackendUserController.class);
 	
-	//½øÈë³¬¼¶¹ÜÀíÔ±µÇÂ½Ò³Ãæ
+	//è¿›å…¥è¶…çº§ç®¡ç†å‘˜ç™»é™†é¡µé¢
 	@RequestMapping(value="/backLogin")
 	public String backLogin(){
 		return "backendlogin";
 	}
 	
-	//³¬¼¶¹ÜÀíÔ±µÇÂ½£¬ÑéÖ¤ÕËºÅÃÜÂë
+	//è¶…çº§ç®¡ç†å‘˜ç™»é™†ï¼ŒéªŒè¯è´¦å·å¯†ç 
 	@RequestMapping(value="/doLogin")
 	public String doLogin(@RequestParam(value="userCode") String userCode,
 							@RequestParam(value="userPassword") String userPassword,
 							HttpServletRequest request,
 							HttpSession session){
-		logger.debug("===================>³¬¼¶¹ÜÀíÔ±µÇÂ½ÑéÖ¤ÖĞ");
-		//Æ¥ÅäÓÃ»§
+		logger.debug("===================>è¶…çº§ç®¡ç†å‘˜ç™»é™†éªŒè¯ä¸­");
+		//åŒ¹é…ç”¨æˆ·
 		BackendUser user=null;
 		user=backendUserService.loginByCode(userCode, userPassword);
-		if (user!=null) {//µÇÂ½³É¹¦
-			session.setAttribute(Constants.BACKUSER_SESSION, user);//±£´æÓÃ»§ĞÅÏ¢
-			//Ò³ÃæÌø×ª
+		if (user!=null) {//ç™»é™†æˆåŠŸ
+			session.setAttribute(Constants.BACKUSER_SESSION, user);//ä¿å­˜ç”¨æˆ·ä¿¡æ¯
+			//é¡µé¢è·³è½¬
 			return "redirect:/backend/flatform/main";
 		}else {
-			//±£ÁôÔÚµÇÂ½Ò³Ãæ£¬ÌáÊ¾´íÎóÏÂĞÅÏ¢
-			request.setAttribute("error", "ÓÃ»§Ãû»ñÃÜÂë²»ÕıÈ·");
+			//ä¿ç•™åœ¨ç™»é™†é¡µé¢ï¼Œæç¤ºé”™è¯¯ä¸‹ä¿¡æ¯
+			request.setAttribute("error", "ç”¨æˆ·åè·å¯†ç ä¸æ­£ç¡®");
 			return "backendlogin";
 		}
 	}
 	
-	//µÇÂ½³É¹¦
+	//ç™»é™†æˆåŠŸ
 	@RequestMapping(value="/flatform/main")
 	public String login(HttpSession session){
 		if (session.getAttribute(Constants.BACKUSER_SESSION)==null) {
@@ -62,7 +62,7 @@ public class BackendUserController {
 		return "backend/main";
 	}
 	
-	//ÓÃ»§×¢ÏúµÇÂ½
+	//ç”¨æˆ·æ³¨é”€ç™»é™†
 	@RequestMapping(value="/logout")
 	public String logout(HttpSession session){
 		session.removeAttribute(Constants.BACKUSER_SESSION);

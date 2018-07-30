@@ -1,23 +1,23 @@
-package cn.appsys.pojo;
+ï»¿package cn.appsys.pojo;
 
 import java.util.Date;
 
 /**
- * ¿ª·¢ÕßÓÃ»§ÊµÌåÀà
+ * å¼€å‘è€…ç”¨æˆ·å®ä½“ç±»
  * @author Administrator
  *
  */
 public class DevUser {
 	private Integer id ; //id
-	private String devCode; //¿ª·¢ÕßÕÊºÅ 
-	private String devName; //¿ª·¢ÕßÃû³Æ
-	private String devPassword; //¿ª·¢ÕßÃÜÂë
-	private String devEmail; //¿ª·¢Õßµç×ÓÓÊÏä
-	private String devInfo; //¿ª·¢Õß¼ò½é
-	private Integer createdBy; //´´½¨Õß
-	private Date creationDate; //´´½¨Ê±¼ä
-	private Integer modifyBy; //¸üĞÂÕß
-	private Date modifyDate; //×îĞÂ¸üĞÂÊ±¼ä
+	private String devCode; //å¼€å‘è€…å¸å· 
+	private String devName; //å¼€å‘è€…åç§°
+	private String devPassword; //å¼€å‘è€…å¯†ç 
+	private String devEmail; //å¼€å‘è€…ç”µå­é‚®ç®±
+	private String devInfo; //å¼€å‘è€…ç®€ä»‹
+	private Integer createdBy; //åˆ›å»ºè€…
+	private Date creationDate; //åˆ›å»ºæ—¶é—´
+	private Integer modifyBy; //æ›´æ–°è€…
+	private Date modifyDate; //æœ€æ–°æ›´æ–°æ—¶é—´
 	public Integer getId() {
 		return id;
 	}

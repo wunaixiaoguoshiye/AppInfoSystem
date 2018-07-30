@@ -1,17 +1,17 @@
-package cn.appsys.dao.devuser;
+ï»¿package cn.appsys.dao.devuser;
 
 import org.apache.ibatis.annotations.Param;
 
 import cn.appsys.pojo.DevUser;
 
 /**
- * app¿ª·¢ÕßÓÃ»§½Ó¿Ú
+ * appå¼€å‘è€…ç”¨æˆ·æ¥å£
  * @author Administrator
  *
  */
 public interface DevUserMapper {
 	/**
-	 * APP¿ª·¢ÕßÓÃ»§µÇÂ¼£¬¸ù¾İÓÃ»§±àºÅ²éÑ¯ÊÇ·ñ´æÔÚÓÃ»§
+	 * APPå¼€å‘è€…ç”¨æˆ·ç™»å½•ï¼Œæ ¹æ®ç”¨æˆ·ç¼–å·æŸ¥è¯¢æ˜¯å¦å­˜åœ¨ç”¨æˆ·
 	 * @return
 	 */
 	public DevUser getLoginUser(@Param("devCode") String devCode );

@@ -1,4 +1,6 @@
 eclipse.preferences.version=1
 encoding//WebRoot/statics/localjs/appinfolist.js=UTF-8
+encoding//src/cn/appsys/dao/devuser/DevUserMapper.java=UTF-8
+encoding//src/cn/appsys/interceptor/SysInterceptor.java=UTF-8
 encoding//src/cn/appsys/tools/PageSupport.java=UTF-8
 encoding/<project>=UTF-8

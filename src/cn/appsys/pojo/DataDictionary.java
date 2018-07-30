@@ -1,22 +1,22 @@
-package cn.appsys.pojo;
+ï»¿package cn.appsys.pojo;
 
 import java.util.Date;
 
 /**
- * Êı¾İ×ÖµäÊµÌåÀà
+ * æ•°æ®å­—å…¸å®ä½“ç±»
  * @author Administrator
  *
  */
 public class DataDictionary {
-	private Integer id; //Ö÷¼üID
-	private String typeCode; //ÀàĞÍ±àÂë
-	private String typeName; //ÀàĞÍÃû³Æ
-	private Integer valueId; //ÀàĞÍÖµID
-	private String valueName; //ÀàĞÍÖµName
-	private Integer createdBy; //´´½¨Õß£¨À´Ô´ÓÚbackend_userÓÃ»§±íµÄÓÃ»§id£©
-	private Date creationDate; //´´½¨Ê±¼ä
-	private Integer modifyBy; //¸üĞÂÕß£¨À´Ô´ÓÚbackend_userÓÃ»§±íµÄÓÃ»§id£©
-	private Date modifyDate; //×îĞÂ¸üĞÂÊ±¼ä
+	private Integer id; //ä¸»é”®ID
+	private String typeCode; //ç±»å‹ç¼–ç 
+	private String typeName; //ç±»å‹åç§°
+	private Integer valueId; //ç±»å‹å€¼ID
+	private String valueName; //ç±»å‹å€¼Name
+	private Integer createdBy; //åˆ›å»ºè€…ï¼ˆæ¥æºäºbackend_userç”¨æˆ·è¡¨çš„ç”¨æˆ·idï¼‰
+	private Date creationDate; //åˆ›å»ºæ—¶é—´
+	private Integer modifyBy; //æ›´æ–°è€…ï¼ˆæ¥æºäºbackend_userç”¨æˆ·è¡¨çš„ç”¨æˆ·idï¼‰
+	private Date modifyDate; //æœ€æ–°æ›´æ–°æ—¶é—´
 	public Integer getId() {
 		return id;
 	}

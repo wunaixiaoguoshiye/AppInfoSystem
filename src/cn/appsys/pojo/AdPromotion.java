@@ -1,26 +1,26 @@
-package cn.appsys.pojo;
+ï»¿package cn.appsys.pojo;
 
 import java.util.Date;
 
 import javax.xml.crypto.Data;
 
 /**
- * ¹ã¸æÍÆ¹ãÊµÌåÀà
+ * å¹¿å‘Šæ¨å¹¿å®ä½“ç±»
  * @author Administrator
  *
  */
 public class AdPromotion {
-	private int id;					//Ö÷¼üid
-	private int appId;				//appId£¨À´Ô´ÓÚ£ºapp_info±íµÄÖ÷¼üid£©
-	private String adPicPath;		//¹ã¸æÍ¼Æ¬´æ´¢Â·¾¶
-	private int adPV;				//¹ã¸æµã»÷Á¿
-	private int carouselPosition;	//ÂÖ²¥Î»£¨1-n£©
-	private Date startTime;			//ÆğĞ§Ê±¼ä
-	private Date endTime;			//Ê§Ğ§Ê±¼ä
-	private int createdBy;			//´´½¨Õß£¨À´Ô´ÓÚbackend_userÓÃ»§±íµÄÓÃ»§id£©
-	private Date creationDate;		//´´½¨Ê±¼ä
-	private int modifyBy;			//¸üĞÂÕß£¨À´Ô´ÓÚbackend_userÓÃ»§±íµÄÓÃ»§id£©
-	private Date modifyDate;		//×îĞÂ¸üĞÂÊ±¼ä
+	private int id;					//ä¸»é”®id
+	private int appId;				//appIdï¼ˆæ¥æºäºï¼šapp_infoè¡¨çš„ä¸»é”®idï¼‰
+	private String adPicPath;		//å¹¿å‘Šå›¾ç‰‡å­˜å‚¨è·¯å¾„
+	private int adPV;				//å¹¿å‘Šç‚¹å‡»é‡
+	private int carouselPosition;	//è½®æ’­ä½ï¼ˆ1-nï¼‰
+	private Date startTime;			//èµ·æ•ˆæ—¶é—´
+	private Date endTime;			//å¤±æ•ˆæ—¶é—´
+	private int createdBy;			//åˆ›å»ºè€…ï¼ˆæ¥æºäºbackend_userç”¨æˆ·è¡¨çš„ç”¨æˆ·idï¼‰
+	private Date creationDate;		//åˆ›å»ºæ—¶é—´
+	private int modifyBy;			//æ›´æ–°è€…ï¼ˆæ¥æºäºbackend_userç”¨æˆ·è¡¨çš„ç”¨æˆ·idï¼‰
+	private Date modifyDate;		//æœ€æ–°æ›´æ–°æ—¶é—´
 	public int getId() {
 		return id;
 	}

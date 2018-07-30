@@ -1,45 +1,45 @@
-package cn.appsys.pojo;
+ï»¿package cn.appsys.pojo;
 
 import java.util.Date;
 
 /**
- * appĞÅÏ¢ÊµÌåÀà
+ * appä¿¡æ¯å®ä½“ç±»
  * @author Administrator
  *
  */
 public class AppInfo {
-	private int id;						//Ö÷¼üid
-	private String softwareName;		//Èí¼şÃû³Æ
-	private String APKName;				//APKÃû³Æ£¨Î¨Ò»£©
-	private String supportROM;			//Ö§³ÖROM
-	private String interfaceLanguage;	//½çÃæÓïÑÔ
-	private double softwareSize;		//Èí¼ş´óĞ¡£¨µ¥Î»£ºM£©
-	private Date updateDate;			//¸üĞÂÈÕÆÚ
-	private int devId;					//¿ª·¢Õßid£¨À´Ô´ÓÚ£ºdev_user±íµÄ¿ª·¢Õßid£©
-	private String appInfo;				//Ó¦ÓÃ¼ò½é
-	private int status;					//×´Ì¬£¨À´Ô´ÓÚ£ºdata_dictionary£¬1 ´ıÉóºË 2 ÉóºËÍ¨¹ı 3 ÉóºË²»Í¨¹ı 4 ÒÑÉÏ¼Ü 5 ÒÑÏÂ¼Ü£©
-	private Date onSaleDate;			//ÉÏ¼ÜÊ±¼ä
-	private Date offSaleDate;			//ÏÂ¼ÜÊ±¼ä
-	private int flatformId;				//ËùÊôÆ½Ì¨£¨À´Ô´ÓÚ£ºdata_dictionary£¬1 ÊÖ»ú 2 Æ½°å 3 Í¨ÓÃ£©
-	private int categoryLevel3;			//ËùÊôÈı¼¶·ÖÀà£¨À´Ô´ÓÚ£ºdata_dictionary£©
-	private int downloads;				//ÏÂÔØÁ¿£¨µ¥Î»£º´Î£©
-	private int createdBy;				//´´½¨Õß£¨À´Ô´ÓÚdev_user¿ª·¢ÕßĞÅÏ¢±íµÄÓÃ»§id£©
-	private Date creationDate;			//´´½¨Ê±¼ä
-	private int modifyBy;				//¸üĞÂÕß£¨À´Ô´ÓÚdev_user¿ª·¢ÕßĞÅÏ¢±íµÄÓÃ»§id£©
-	private Date modifyDate;			//×îĞÂ¸üĞÂÊ±¼ä
-	private int categoryLevel1;			//ËùÊôÒ»¼¶·ÖÀà£¨À´Ô´ÓÚ£ºdata_dictionary£©
-	private int categoryLevel2;			//ËùÊô¶ş¼¶·ÖÀà£¨À´Ô´ÓÚ£ºdata_dictionary£©
-	private String logoPicPath;			//LOGOÍ¼Æ¬urlÂ·¾¶
-	private String logoLocPath;			//LOGOÍ¼Æ¬µÄ·şÎñÆ÷´æ´¢Â·¾¶
-	private int versionId;				//×îĞÂµÄ°æ±¾id
+	private int id;						//ä¸»é”®id
+	private String softwareName;		//è½¯ä»¶åç§°
+	private String APKName;				//APKåç§°ï¼ˆå”¯ä¸€ï¼‰
+	private String supportROM;			//æ”¯æŒROM
+	private String interfaceLanguage;	//ç•Œé¢è¯­è¨€
+	private double softwareSize;		//è½¯ä»¶å¤§å°ï¼ˆå•ä½ï¼šMï¼‰
+	private Date updateDate;			//æ›´æ–°æ—¥æœŸ
+	private int devId;					//å¼€å‘è€…idï¼ˆæ¥æºäºï¼šdev_userè¡¨çš„å¼€å‘è€…idï¼‰
+	private String appInfo;				//åº”ç”¨ç®€ä»‹
+	private int status;					//çŠ¶æ€ï¼ˆæ¥æºäºï¼šdata_dictionaryï¼Œ1 å¾…å®¡æ ¸ 2 å®¡æ ¸é€šè¿‡ 3 å®¡æ ¸ä¸é€šè¿‡ 4 å·²ä¸Šæ¶ 5 å·²ä¸‹æ¶ï¼‰
+	private Date onSaleDate;			//ä¸Šæ¶æ—¶é—´
+	private Date offSaleDate;			//ä¸‹æ¶æ—¶é—´
+	private int flatformId;				//æ‰€å±å¹³å°ï¼ˆæ¥æºäºï¼šdata_dictionaryï¼Œ1 æ‰‹æœº 2 å¹³æ¿ 3 é€šç”¨ï¼‰
+	private int categoryLevel3;			//æ‰€å±ä¸‰çº§åˆ†ç±»ï¼ˆæ¥æºäºï¼šdata_dictionaryï¼‰
+	private int downloads;				//ä¸‹è½½é‡ï¼ˆå•ä½ï¼šæ¬¡ï¼‰
+	private int createdBy;				//åˆ›å»ºè€…ï¼ˆæ¥æºäºdev_userå¼€å‘è€…ä¿¡æ¯è¡¨çš„ç”¨æˆ·idï¼‰
+	private Date creationDate;			//åˆ›å»ºæ—¶é—´
+	private int modifyBy;				//æ›´æ–°è€…ï¼ˆæ¥æºäºdev_userå¼€å‘è€…ä¿¡æ¯è¡¨çš„ç”¨æˆ·idï¼‰
+	private Date modifyDate;			//æœ€æ–°æ›´æ–°æ—¶é—´
+	private int categoryLevel1;			//æ‰€å±ä¸€çº§åˆ†ç±»ï¼ˆæ¥æºäºï¼šdata_dictionaryï¼‰
+	private int categoryLevel2;			//æ‰€å±äºŒçº§åˆ†ç±»ï¼ˆæ¥æºäºï¼šdata_dictionaryï¼‰
+	private String logoPicPath;			//LOGOå›¾ç‰‡urlè·¯å¾„
+	private String logoLocPath;			//LOGOå›¾ç‰‡çš„æœåŠ¡å™¨å­˜å‚¨è·¯å¾„
+	private int versionId;				//æœ€æ–°çš„ç‰ˆæœ¬id
 	
-	private String statusName;//app×´Ì¬Ãû³Æ
-	private String flatformName;//appËùÊôÆ½Ì¨Ãû³Æ
-	private String categoryLevel3Name;//ËùÊôÈı¼¶·ÖÀàÃû³Æ
-	private String devName;//¿ª·¢ÕßÃû³Æ
-	private String categoryLevel1Name;//ËùÊôÒ»¼¶·ÖÀàÃû³Æ
-	private String categoryLevel2Name;//ËùÊô¶ş¼¶·ÖÀàÃû³Æ
-	private String versionNo;//×îĞÂµÄ°æ±¾ºÅ
+	private String statusName;//appçŠ¶æ€åç§°
+	private String flatformName;//appæ‰€å±å¹³å°åç§°
+	private String categoryLevel3Name;//æ‰€å±ä¸‰çº§åˆ†ç±»åç§°
+	private String devName;//å¼€å‘è€…åç§°
+	private String categoryLevel1Name;//æ‰€å±ä¸€çº§åˆ†ç±»åç§°
+	private String categoryLevel2Name;//æ‰€å±äºŒçº§åˆ†ç±»åç§°
+	private String versionNo;//æœ€æ–°çš„ç‰ˆæœ¬å·
 	
 	
 

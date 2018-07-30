@@ -7,13 +7,13 @@ import org.apache.ibatis.annotations.Param;
 import cn.appsys.pojo.AppInfo;
 
 /**
- * app»ù´¡ĞÅÏ¢½Ó¿ÚÊµÏÖ
+ * appï¿½ï¿½ï¿½ï¿½Ï¢ï¿½Ó¿ï¿½Êµï¿½ï¿½
  * @author Administrator
  *
  */
 public interface AppinfoService {
 	/**
-	 * ²éÑ¯ĞÅÏ¢ÁĞ±í
+	 * ï¿½ï¿½Ñ¯ï¿½ï¿½Ï¢ï¿½Ğ±ï¿½
 	 */
 	public List<AppInfo> getAppInfoList(String softwareName,
 										Integer status,
@@ -25,7 +25,7 @@ public interface AppinfoService {
 										Integer currentPageNo,
 										Integer pageSize);
 	/**
-	 * ²éÑ¯ÉÌÆ·¼ÇÂ¼Êı
+	 * ï¿½ï¿½Ñ¯ï¿½ï¿½Æ·ï¿½ï¿½Â¼ï¿½ï¿½
 	 */
 	public int getAppInfoCount(String softwareName,
 								Integer status,
@@ -34,4 +34,17 @@ public interface AppinfoService {
 								Integer categoryLevel3,
 								Integer flatformId,
 								Integer devId);
+	/**
+	 * æŸ¥è¯¢apkNameæŸ¥è¯¢æ˜¯å¦æœ‰é‡å
+	 */
+	public AppInfo getAppInfoByApkName(Integer id,String APKName);
+	
+	/**
+	 * æ–°å¢appä¿¡æ¯
+	 */
+	public int add(AppInfo appInfo);
+	
+
+	
+	
 }

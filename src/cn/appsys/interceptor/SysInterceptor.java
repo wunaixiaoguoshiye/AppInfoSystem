@@ -1,4 +1,4 @@
-package cn.appsys.interceptor;
+﻿package cn.appsys.interceptor;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -14,7 +14,7 @@ import cn.appsys.tools.Constants;
 
 
 /**
- *创建自定义的拦截�?
+ *拦截器，检查用户是否登陆
  * @author asusa
  *
  */

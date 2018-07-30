@@ -1,23 +1,23 @@
-package cn.appsys.pojo;
+ï»¿package cn.appsys.pojo;
 
 import java.util.Date;
 
 /**
- * ¹ÜÀíÕßÓÃ»§ÊµÌåÀà
+ * ç®¡ç†è€…ç”¨æˆ·å®ä½“ç±»
  * @author Administrator
  *
  */
 public class BackendUser {
-	private int id;				//Ö÷¼üid
-	private String userCode;		//ÓÃ»§±àÂë
-	private String userName;	//ÓÃ»§Ãû³Æ
-	private int userType;		//ÓÃ»§½ÇÉ«ÀàĞÍ£¨À´Ô´ÓÚÊı¾İ×Öµä±í£¬·ÖÎª£º³¬¹Ü¡¢²ÆÎñ¡¢ÊĞ³¡¡¢ÔËÓª¡¢ÏúÊÛ£©
-	private int createdBy;		//´´½¨Õß£¨À´Ô´ÓÚbackend_userÓÃ»§±íµÄÓÃ»§id£©
-	private Date creationDate;	//´´½¨Ê±¼ä
-	private int modifyBy;		//¸üĞÂÕß£¨À´Ô´ÓÚbackend_userÓÃ»§±íµÄÓÃ»§id£©
-	private Date modifyDate;	//×îĞÂ¸üĞÂÊ±¼ä
-	private String userPassword;//ÓÃ»§ÃÜÂë
-	private String userTypeName;//ÓÃ»§ÀàĞÍÃû³Æ
+	private int id;				//ä¸»é”®id
+	private String userCode;		//ç”¨æˆ·ç¼–ç 
+	private String userName;	//ç”¨æˆ·åç§°
+	private int userType;		//ç”¨æˆ·è§’è‰²ç±»å‹ï¼ˆæ¥æºäºæ•°æ®å­—å…¸è¡¨ï¼Œåˆ†ä¸ºï¼šè¶…ç®¡ã€è´¢åŠ¡ã€å¸‚åœºã€è¿è¥ã€é”€å”®ï¼‰
+	private int createdBy;		//åˆ›å»ºè€…ï¼ˆæ¥æºäºbackend_userç”¨æˆ·è¡¨çš„ç”¨æˆ·idï¼‰
+	private Date creationDate;	//åˆ›å»ºæ—¶é—´
+	private int modifyBy;		//æ›´æ–°è€…ï¼ˆæ¥æºäºbackend_userç”¨æˆ·è¡¨çš„ç”¨æˆ·idï¼‰
+	private Date modifyDate;	//æœ€æ–°æ›´æ–°æ—¶é—´
+	private String userPassword;//ç”¨æˆ·å¯†ç 
+	private String userTypeName;//ç”¨æˆ·ç±»å‹åç§°
 	
 	
 	public String getUserTypeName() {

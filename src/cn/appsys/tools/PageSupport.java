@@ -1,7 +1,7 @@
-package cn.appsys.tools;
+﻿package cn.appsys.tools;
 
 public class PageSupport {
-	//当前页码-来自于用户输�?
+	//当前页码-来自于用户传入
 	private int currentPageNo = 1;
 	
 	//总数量（表）
@@ -10,7 +10,7 @@ public class PageSupport {
 	//页面容量
 	private int pageSize = 0;
 	
-	//总页�?totalCount/pageSize�?1�?
+	//总页计算
 	private int totalPageCount = 1;
 
 	public int getCurrentPageNo() {
@@ -30,7 +30,7 @@ public class PageSupport {
 	public void setTotalCount(int totalCount) {
 		if(totalCount > 0){
 			this.totalCount = totalCount;
-			//设置总页�?
+			//设置总页
 			this.setTotalPageCountByRs();
 		}
 	}

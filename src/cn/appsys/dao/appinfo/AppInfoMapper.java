@@ -1,4 +1,4 @@
-package cn.appsys.dao.appinfo;
+ï»¿package cn.appsys.dao.appinfo;
 
 import java.util.List;
 
@@ -7,13 +7,13 @@ import org.apache.ibatis.annotations.Param;
 import cn.appsys.pojo.AppInfo;
 
 /**
- * app»ù´¡ĞÅÏ¢½Ó¿Ú
+ * appåŸºç¡€ä¿¡æ¯æ¥å£
  * @author Administrator
  *
  */
 public interface AppInfoMapper {
 	/**
-	 * ²éÑ¯ĞÅÏ¢ÁĞ±í
+	 * æŸ¥è¯¢ä¿¡æ¯åˆ—è¡¨
 	 */
 	public List<AppInfo> getAppInfoList(@Param("softwareName")String softwareName,
 										@Param("status")Integer status,
@@ -25,7 +25,7 @@ public interface AppInfoMapper {
 										@Param("currentPageNo")Integer currentPageNo,
 										@Param("pageSize")Integer pageSize);
 	/**
-	 * ²éÑ¯ÉÌÆ·¼ÇÂ¼Êı
+	 * æŸ¥è¯¢å•†å“è®°å½•æ•°
 	 */
 	public int getAppInfoCount(@Param("softwareName")String softwareName,
 								@Param("status")Integer status,
@@ -34,6 +34,17 @@ public interface AppInfoMapper {
 								@Param("categoryLevel3")Integer categoryLevel3,
 								@Param("flatformId")Integer flatformId,
 								@Param("devId")Integer devId);
+	/**
+	 * æŸ¥è¯¢apkNameæŸ¥è¯¢æ˜¯å¦æœ‰é‡å
+	 */
+	public AppInfo getAppInfoByApkName(@Param("id")Integer id,@Param("APKName")String APKName);
+	
+	/**
+	 * æ–°å¢appä¿¡æ¯
+	 */
+	public int add(AppInfo appInfo);
+	
+
 	
 	
 }

@@ -1,26 +1,26 @@
-package cn.appsys.pojo;
+ï»¿package cn.appsys.pojo;
 
 import java.util.Date;
 
 /**
- * app°æÈ¨ĞÅÏ¢ÊµÌåÀà
+ * appç‰ˆæƒä¿¡æ¯å®ä½“ç±»
  * @author Administrator
  *
  */
 public class AppVersion {
-	private Integer id; //Ö÷¼üid
-	private Integer appId; //appId£¨À´Ô´ÓÚ£ºapp_info±íµÄÖ÷¼üid£©
-	private String versionNo; //°æ±¾ºÅ
-	private String versionInfo; //°æ±¾½éÉÜ
-	private Integer publishStatus; //·¢²¼×´Ì¬£¨À´Ô´ÓÚ£ºdata_dictionary£¬1 ²»·¢²¼ 2 ÒÑ·¢²¼ 3 Ô¤·¢²¼£©
-	private String downloadLink; //ÏÂÔØÁ´½Ó
-	private Double versionSize; //decimal(20,2)°æ±¾´óĞ¡£¨µ¥Î»£ºM£©
-	private Integer createdBy; //´´½¨Õß£¨À´Ô´ÓÚdev_user¿ª·¢ÕßĞÅÏ¢±íµÄÓÃ»§id£©
-	private Date creationDate; //´´½¨Ê±¼ä
-	private Integer modifyBy; //¸üĞÂÕß£¨À´Ô´ÓÚdev_user¿ª·¢ÕßĞÅÏ¢±íµÄÓÃ»§id£©
-	private Date modifyDate; //×îĞÂ¸üĞÂÊ±¼ä
-	private String apkLocPath; //apkÎÄ¼şµÄ·şÎñÆ÷´æ´¢Â·¾¶
-	private String apkFileName; //ÉÏ´«µÄapkÎÄ¼şÃû³Æ
+	private Integer id; //ä¸»é”®id
+	private Integer appId; //appIdï¼ˆæ¥æºäºï¼šapp_infoè¡¨çš„ä¸»é”®idï¼‰
+	private String versionNo; //ç‰ˆæœ¬å·
+	private String versionInfo; //ç‰ˆæœ¬ä»‹ç»
+	private Integer publishStatus; //å‘å¸ƒçŠ¶æ€ï¼ˆæ¥æºäºï¼šdata_dictionaryï¼Œ1 ä¸å‘å¸ƒ 2 å·²å‘å¸ƒ 3 é¢„å‘å¸ƒï¼‰
+	private String downloadLink; //ä¸‹è½½é“¾æ¥
+	private Double versionSize; //decimal(20,2)ç‰ˆæœ¬å¤§å°ï¼ˆå•ä½ï¼šMï¼‰
+	private Integer createdBy; //åˆ›å»ºè€…ï¼ˆæ¥æºäºdev_userå¼€å‘è€…ä¿¡æ¯è¡¨çš„ç”¨æˆ·idï¼‰
+	private Date creationDate; //åˆ›å»ºæ—¶é—´
+	private Integer modifyBy; //æ›´æ–°è€…ï¼ˆæ¥æºäºdev_userå¼€å‘è€…ä¿¡æ¯è¡¨çš„ç”¨æˆ·idï¼‰
+	private Date modifyDate; //æœ€æ–°æ›´æ–°æ—¶é—´
+	private String apkLocPath; //apkæ–‡ä»¶çš„æœåŠ¡å™¨å­˜å‚¨è·¯å¾„
+	private String apkFileName; //ä¸Šä¼ çš„apkæ–‡ä»¶åç§°
 	public Integer getId() {
 		return id;
 	}

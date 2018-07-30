@@ -1,17 +1,17 @@
-package cn.appsys.dao.backenduser;
+ï»¿package cn.appsys.dao.backenduser;
 
 import org.apache.ibatis.annotations.Param;
 
 import cn.appsys.pojo.BackendUser;
 
 /**
- * ³¬¼¶¹ÜÀíÔ±½Ó¿Ú
+ * è¶…çº§ç®¡ç†å‘˜æ¥å£
  * @author Administrator
  *
  */
 public interface BackendUserMapper {
 	/**
-	 * ³¬¼¶¹ÜÀíÔ±µÇÂ½£¬¸ù¾İÕËºÅÃÜÂë²éÑ¯ÊÇ·ñ´æÔÚÓÃ»§
+	 * è¶…çº§ç®¡ç†å‘˜ç™»é™†ï¼Œæ ¹æ®è´¦å·å¯†ç æŸ¥è¯¢æ˜¯å¦å­˜åœ¨ç”¨æˆ·
 	 */
 	public BackendUser loginByCode(@Param("userCode") String userCode);
 }
