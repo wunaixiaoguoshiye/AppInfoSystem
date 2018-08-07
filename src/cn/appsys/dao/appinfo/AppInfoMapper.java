@@ -34,17 +34,31 @@ public interface AppInfoMapper {
 								@Param("categoryLevel3")Integer categoryLevel3,
 								@Param("flatformId")Integer flatformId,
 								@Param("devId")Integer devId);
+	public AppInfo getAppInfo(@Param(value="id")Integer id,@Param(value="APKName")String APKName)throws Exception;
+
 	/**
 	 * 查询apkName查询是否有重名
 	 */
 	public AppInfo getAppInfoByApkName(@Param("id")Integer id,@Param("APKName")String APKName);
+	/**
+	 * 根据appId，更新最新versionId
+	 * @param versionId
+	 * @param appId
+	 * @return
+	 * @throws Exception
+	 */
+	public int updateVersionId(@Param(value="versionId")Integer versionId,@Param(value="id")Integer appId)throws Exception;
 	
 	/**
 	 * 新增app信息
 	 */
 	public int add(AppInfo appInfo);
+	/**
+	更新app状态
+	*/
+	public int updateSatus(@Param(value="status")Integer status,@Param(value="id")Integer id)throws Exception;
 	
-
+	
 	
 	
 }
